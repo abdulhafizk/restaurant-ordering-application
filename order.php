@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Decafe</title>
+  <title>Order</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -54,17 +54,16 @@
                       Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link-dark" href="order.php"><i class="bi bi-cart4"></i> Order</a>
+                    <a class="nav-link link-dark" href="#"><i class="bi bi-cart4"></i> Order</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link-dark" href="customer.php"><i class="bi bi-person-badge"></i> Customer</a>
+                    <a class="nav-link link-dark" href="#"><i class="bi bi-person-badge"></i> Customer</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link-dark" href="product.php"><i class="bi bi-card-checklist"></i> Product</a>
+                    <a class="nav-link link-dark" href="#"><i class="bi bi-card-checklist"></i> Product</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link link-dark" href="report.php"><i class="bi bi-clipboard2-data-fill"></i>
-                      Report</a>
+                    <a class="nav-link link-dark" href="#"><i class="bi bi-clipboard2-data-fill"></i> Report</a>
                   </li>
                 </ul>
               </div>
