@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark bg-primary stiky-top">
     <div class="container-lg">
-        <a class="navbar-brand" href="#"><i class="bi bi-cup-hot-fill"></i> Decafe</a>
+        <a class="navbar-brand" href="."><i class="bi bi-cup-hot-fill"></i> Decafe</a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

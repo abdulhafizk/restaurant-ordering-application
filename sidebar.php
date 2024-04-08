@@ -14,26 +14,27 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav nav-pills flex-column justify-content-end flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link ps-2 <?php echo  ( Isset ($_GET['x'])  && $_GET['x']=='home') ? 'active link-light' : 'link-dark' ; ?>" aria-current="page" href="index.php?
-                            x=home"><i class="bi bi-house-door"></i> Dashboard</a>
+                            <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'home') ? 'active link-light' : 'link-dark'; ?>"
+                                aria-current="page" href="home"><i class="bi bi-house-door"></i> Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ps-2 <?php echo  ( Isset ($_GET['x'])  && $_GET['x']=='order') ? 'active link-light' : 'link-dark' ; ?>" href="order.php?x=order"><i class="bi bi-cart4"></i>
+                            <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'order') ? 'active link-light' : 'link-dark'; ?>"
+                                href="order"><i class="bi bi-cart4"></i>
                                 Order</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ps-2 <?php echo  ( Isset ($_GET['x'])  && $_GET['x']=='customer') ? 'active link-light' : 'link-dark' ; ?>" href="customer.php?x=customer"><i
-                                    class="bi bi-person-badge"></i>
+                            <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'customer') ? 'active link-light' : 'link-dark'; ?>"
+                                href="customer"><i class="bi bi-person-badge"></i>
                                 Customer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ps-2 <?php echo  ( Isset ($_GET['x'])  && $_GET['x']=='product') ? 'active link-light' : 'link-dark' ; ?>" href="product.php?x=product"><i
-                                    class="bi bi-card-checklist"></i>
+                            <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'product') ? 'active link-light' : 'link-dark'; ?>"
+                                href="product"><i class="bi bi-card-checklist"></i>
                                 Product</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link ps-2 <?php echo  ( Isset ($_GET['x'])  && $_GET['x']=='reprt') ? 'active link-light' : 'link-dark' ; ?>" href="report.php?x=report"><i
-                                    class="bi bi-clipboard2-data-fill"></i>
+                            <a class="nav-link ps-2 <?php echo (isset($_GET['x']) && $_GET['x'] == 'report') ? 'active link-light' : 'link-dark'; ?>"
+                                href="report"><i class="bi bi-clipboard2-data-fill"></i>
                                 Report</a>
                         </li>
                     </ul>
