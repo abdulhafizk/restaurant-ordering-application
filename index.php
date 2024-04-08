@@ -21,18 +21,10 @@
       <!-- Sidebar End -->
 
       <!-- Content Start -->
-      <div class="col-lg-9 mt-2">
-        <div class="card">
-          <div class="card-header">
-            Featured
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
+      <?php
+      if (isset($_GET['x']) && $_GET['x'] == 'home')
+        include "home.php";
+      ?>
       <!-- Content End -->
 
       <div class="fixed-buottom text-center mb-3">
