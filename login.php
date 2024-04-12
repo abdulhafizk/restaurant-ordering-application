@@ -9,13 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Signin Template · Bootstrap v5.3</title>
+    <title>Decafe - Apliksi Pemesanan Makanan dan Minuman Cafe</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -172,17 +170,25 @@
 
 
     <main class="form-signin w-100 m-auto">
-        <form>
+        <form class="needs-validation" novalidate action="login_procces/procces_login.php">
             <img class="mb-4" src="assets/svg/koffe.svg" alt="" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <h1 class="h3 mb-3 fw-normal">Please log in</h1>
 
             <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input name="username" type="email" class="form-control" id="floatingInput"
+                    placeholder="name@example.com" required>
                 <label for="floatingInput">Email address</label>
+                <div class="invalid-feedback">
+                    Email yang anda masukkan salah.
+                </div>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                    required>
                 <label for="floatingPassword">Password</label>
+                <div class="invalid-feedback">
+                    Password yang anda masukkkan salah.
+                </div>
             </div>
 
             <div class="form-check text-start my-3">
@@ -191,11 +197,33 @@
                     Remember me
                 </label>
             </div>
-            <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
+            <button class="btn btn-primary w-100 py-2" type="submit">Log in</button>
+            <p class="mt-5 mb-3 text-body-secondary">&copy; 2024</p>
         </form>
     </main>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 
 </body>
 
